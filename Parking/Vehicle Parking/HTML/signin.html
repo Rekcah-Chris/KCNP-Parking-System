@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Log In</h1>
+            <form id="sign-form" action="signin.php" method="POST">
+                <div class="input-group">
+
+                    <div class="input-field" id="Email">
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" placeholder="Email" name="Email" required>
+                    </div>
+
+                    <div class="input-field" id="Password">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" placeholder="Password" name="Password" required>
+                    </div>
+
+                </div>
+                <div class="btn-field">
+                    <button type="submit" name="Signin" id="signinBtn">Sign In</button>
+                </div>
+                <p>Dont have an admin account <a href="services.html">Click Here |--</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="signin.js"></script>
+</body>
+
+</html>

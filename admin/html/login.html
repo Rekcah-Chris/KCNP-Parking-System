@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Log In</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Admin Login</h1>
+            <form id="log-form" action="login.php" method="POST">
+                <div class="input-group">
+                    <div class="input-field" id="Email">
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" placeholder="Email" name="Email" required>
+                    </div>
+                    <div class="input-field" id="Password">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" placeholder="Password" name="Password" required>
+                    </div>
+                </div>
+                <div class="btn-field">
+                    <button type="submit" id="loginBtn">Log In</button>
+                </div>
+                <p>Don't have an admin account? <a href="admin.html">Click Here</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>
